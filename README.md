@@ -14,5 +14,11 @@ pyinstaller -Dw main.py
 #问题4：控件大小缩放与界面缩放不一致（不自适应）
 先用水平与垂直布局，再顶层选择合适的布局（sizepolic的设置很重要，fixed表示大小不会变），单独的一行想要居中的话，将这一行再加入一个垂直布局
 
+#同一设定字体
+  font = QtGui.QFont()
+  font.setFamily("微软雅黑 Light") //字体
+  font.setPointSize(16) //字号
+  self.foodname.setFont(font) //控件名
+
 下载所有文件，运行main.py即可
 有问题请联系：1094104300@qq.com
